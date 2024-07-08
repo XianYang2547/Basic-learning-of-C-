@@ -1,3 +1,0 @@
-/home/xianyang/Desktop/xy_c_pro/cmake-build-debug/CMakeFiles/xy_c_pro.dir
-/home/xianyang/Desktop/xy_c_pro/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/xianyang/Desktop/xy_c_pro/cmake-build-debug/CMakeFiles/rebuild_cache.dir
