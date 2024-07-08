@@ -1,0 +1,24 @@
+/home/xianyang/Xy_File/clion-2024.1.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/xianyang/Xy_File/clion-2024.1.2/bin/ninja/linux/x64/ninja -G Ninja -S /home/xianyang/Desktop/xy_c_pro/00_Test -B /home/xianyang/Desktop/xy_c_pro/00_Test/cmake-build-debug
+CMake Warning (dev) at /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake:86 (find_package):
+  Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+  --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake:108 (find_host_package)
+  CMakeLists.txt:10 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found CUDA: /usr/local/cuda (found suitable exact version "11.8") 
+CMake Warning (dev) at CMakeLists.txt:12 (find_package):
+  Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+  --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found CUDA: /usr/local/cuda (found version "11.8") 
+/home/xianyang/Desktop/xy_c_pro/00_Test;/home/xianyang/Desktop/xy_c_pro/00_Test/main.cpp
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/xianyang/Desktop/xy_c_pro/00_Test/cmake-build-debug
