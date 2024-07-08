@@ -1,0 +1,1 @@
+在 /home/xianyang/Desktop/xy_c_pro/07_模版 中找不到 CMakeLists.txt 选择 CMakeLists.txt
