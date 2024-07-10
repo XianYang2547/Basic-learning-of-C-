@@ -1,76 +1,47 @@
 /*
- * @file 03_数据类型.cpp
+ * @file 02_变量和cin.cpp
  * @author by xianyang 
  * @time on 24-6-2
  * @description 
  */
 
 #include <iostream>
+#include <iomanip>
+#include "string"
 
 using namespace std;
 
 int main() {
-    /////////////////整形
-    /*short短整形
-            int整形
-    long长整形
-    longlong长长整形---------------取值范围依次增加
+	//变量的声明
+	// int a,b,c;
+	int age;
+	float height;
+	char gender;
+	string name;
+	//变量的使用
+	age = 8;
+	height = 106.3;
+	gender = 'm';
+	name = "xiaobai";
 
-    无符号和有符号数字
-    有符号 signed 允许负数
-    eg:signed int num=-1
-    unsigned无符号
-    eg: unsigned int 2  只能存正数
-    等同于 u_int 2*/
-    short age = 2;
-//    unsigned num = -25;//不能正常显示，超范围了
-    signed int num = -25;
-    long num1 = 20;
-    long long num3 = 22;
+	cout << age << ',' << height << ',' << gender << ',' << name << endl;
+	age = 50;
+	cout << age << endl;
 
-    cout << num << endl;
-    cout << sizeof(age) << endl;//2
-    cout << sizeof(num) << endl;//4
-    cout << sizeof(num1) << endl;//8 for linux 64位
-    cout << sizeof(num3) << endl;//8
-    cout << "********************" << endl;
-    /*//////////////浮点型（全部都是有符号的）有效位数的区别
-     float
-     double
-     long double*/
-    float float_num = 3.14;//单精度浮点数
-    double float_num1 = 6.28;//双精度浮点数
-    long double float_num2 = 12.56;//长精度浮点数
-    cout << sizeof(float_num) << endl;//4
-    cout << sizeof(float_num1) << endl;//8
-    cout << sizeof(float_num2) << endl;//16
-
-    cout << "********************" << endl;
-    /* 字符型(无符号和有符号数字)
-      a=97 A=65
-      b=98*/
-    char ch = 98;
-    cout << ch << endl;//b
-    cout << ch + 1 << endl;//99
-    cout << "********************" << endl;
-    /* //////////////字符串
-     char c语言风格
-
-     string c++风格*/
-    string s1 = "c++ string";
-    cout << s1 << size(s1) << endl;
-    // 字符串的拼接：都是字符串用+，非字符串用to_string（）转为字符串
-    string name = "小白";
-    string gender = "男";
-    age = 10;
-    string sss = name + ",性别" + gender + ",今年" + to_string(age) + "岁了";
-    cout << sss << endl;
-    cout << "********************" << endl;
-    /*///////////////////布尔型
-     * true false
-     * */
-    bool flag1 = true;
-    bool flag2 = false;
-    cout<<flag1<<" and "<<flag2<<endl;
-    return 0;
+	cout << "----------------------------------" << endl;
+	double res = 1000.0 / 3.0;
+	cout << res << endl;//333.333
+	cout << fixed;//使浮点数以固定小数位数的形式显示,不显示为科学计数法
+	cout << res << endl;//333.333333
+	cout << setprecision(2);//控制显示的精度,显示小数点后多少位
+	cout << res << endl;//333.33
+	cout << "----------------------------------" << endl;
+	//cin
+	//数据类型 变量；
+	//cin>>变量；
+	string s;
+	cout << "请输入字符串: ";
+	cin >> s;
+	cout << s << endl;
+	return 0;
 }
