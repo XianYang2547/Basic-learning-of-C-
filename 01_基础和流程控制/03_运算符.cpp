@@ -8,7 +8,10 @@
 #include <iostream>
 
 using namespace std;
-
+/*
+一元运算符 ++ --
+二元运算符 + - / *  %
+ */
 int main() {
     /*算术运算符:+ - * / %取余
      * 自增自减:
